@@ -1,0 +1,539 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+  .DirectButton:hover{
+    color: white;
+  }
+
+.Container {
+  height: 100vh;
+  background-color: #538f83;
+  display: grid;
+  grid-template-rows: 50px auto 60px;
+}
+
+footer {
+  background-color: #538f83;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+footer p{
+    display: inline-block;
+    margin-right:30px ;
+    font-size: 10px ;
+}
+
+.FooterNav{
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 13px;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+   align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+main {
+  background-color: white;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  align-self: start;
+}
+.Logo{
+    height: 40px;
+    width: 60px;
+}
+
+p:hover {
+  cursor: default;
+}
+
+h1:hover{
+  cursor: default;
+}
+
+.Branding {
+  display: flex;
+  align-items:Center;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: black;
+  font-size: 7px;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.Burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.Burger span {
+  width: 28px;
+  height: 3px;
+  background: black;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+  
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .Burger {
+    display: flex;
+  }
+  
+  .SideBar {
+    position: fixed;
+    top: 0;
+    right: -290px;
+    width: 250px;
+    height: 100vh;
+    background: #e3f2ef;
+    padding: 40px 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.35s ease;
+    z-index: 1500;
+  }
+
+  #SideBar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .nav-toggle:checked ~ #SideBar {
+    right: 0;
+  }
+  
+  .nav-toggle:checked + .Burger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .nav-toggle:checked + .Burger span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-toggle:checked + .Burger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+}
+@media screen and (max-width: 1000px) {
+
+
+  .container-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    max-width: 400px;
+    min-width: 350px;
+    height: auto;    
+    min-height: 350px; 
+  }
+
+  .contact-card {
+    width: 90%;
+    max-width: 400px;
+    height: 400px;
+  }
+}
+
+
+
+.grey{
+  color: #555;
+}
+
+a{
+    display: inline-block;
+    color: black;
+}
+a:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    color: white;
+}
+header a:hover{
+    color: #538f83;
+}
+
+.Name{
+    display: block;
+    height: 20px;
+}
+
+.Socials{
+    height:40px;
+    width: 40px;
+}
+ *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+.HeroContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;        
+  padding: 20px;
+  background-image: url(images/hero.jpg);
+  box-sizing: border-box;
+}
+
+    .Hero {
+      background-color: white;
+      width: 90%;
+      max-width: 600px;
+      display: grid;
+      grid-template-columns: 30% 1fr;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .PfpBox {
+      display: grid;
+      grid-template-rows: auto auto auto;
+      align-items: center;
+      justify-items: center;
+      border-right: 1px solid #2c5046;
+      padding: 20px 10px;
+    }
+
+    .Pfp {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+      border-radius: 50%;
+      border: solid 0.1px #2c5046;
+    }
+
+    .PfName {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .Qualifications {
+      font-size: 0.9rem;
+      text-align: center;
+      color: #555;
+      margin-top: 4px;
+    }
+
+    .Hero > div:last-child {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .DirectButton {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #2c5046;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      text-align: center;
+      max-width: 150px;
+    }
+
+    .BlogBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.BFBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.BFBox img {
+  max-width: 100%;
+  height: auto;
+}
+
+.BlogCard {
+  background: #fff; 
+  border-radius: 10px; 
+  border: 0px solid transparent;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15), 0px 8px 24px rgba(0, 0, 0, 0.10);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.BlogCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.20),
+              0px 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.BlogCard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px; 
+  gap: 10px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+  .ImagesRow {
+  display: flex;
+  justify-content: center;   
+  gap: 20px;                  
+  background-color: white;   
+  padding: 20px;              
+  flex-wrap: wrap;            
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.ImageBox {
+  flex: 1 1 50%;              
+  max-width: 500px;           
+  box-sizing: border-box;
+}
+
+.ImageBox img {
+  width: 100%;                
+  height: auto;               
+  display: block;
+}
+
+.CardText {
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+.BlogBox{
+padding: 30px;
+display: grid;
+grid-template-columns: 280px 280px 280px 280px;
+}
+
+.CardImg{
+ height: 250px;
+ width: 200px;
+}
+
+.BlogCard{
+ border: solid 1px  black;
+ height: 370px;
+ width: 240px;
+ background-color:aliceblue;
+ display:inline-block;
+ margin: 10px;
+}
+
+.BFBox{
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.map-container iframe {
+  width: 900px;
+  height: 450px;
+}
+
+.contact-card {
+  border: 1px solid black;
+  width: 280px;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map-container :hover {
+  transform: scale(1);
+}
+
+.container-contact {
+  display: flex;
+  gap: 40px; 
+  margin-top: 40px;
+  padding: 0 10px;
+  margin-bottom: 30px; 
+}
+
+@media (max-width: 768px) {
+          .Hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .PfpBox {
+        border-right: none;
+        border-bottom: 1px solid #2c5046;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+      .Hero > div:last-child {
+        padding: 15px;
+      }
+      .DirectButton {
+        margin: 15px auto 0 auto;
+      }
+      .HeroContainer {
+         min-height: 75vh;      
+         padding: 15px;
+         background-color: #2c5046;
+         justify-content: center;
+      }
+  
+}
+
+@media (max-width: 768px) {
+
+  .BlogBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 14px;       
+    padding-top: 20px;
+  }
+
+  .BlogCard {
+    width: 90%;       
+    max-width: 400px;    
+  }
+}
+
+
+.AboutUs {
+  padding: 40px 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.AboutUs h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #2c5046;
+  text-align: center;
+}
+
+.AboutUs .grey {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-list {
+  padding: 20px 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.services-list p {
+  margin: 8px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.services-list p::before {
+  content: "•";
+  color: #538f83;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+}
+
+@media (max-width: 768px) {
+  .AboutUs h2 {
+    font-size: 1.7rem;
+  }
+  .AboutUs .grey {
+    padding: 0 10px;
+  }
+  .services-list {
+    padding: 0 15px;
+  }
+}
